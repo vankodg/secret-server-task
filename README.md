@@ -2,8 +2,7 @@
 
 ## Introduction
 
-Your task is to implement a secret server and a React UI to manage the secrets. The secret server can be used to store and share secrets
-using the random generated URL. But the secret can be read only before the expiration time. The secret may have TTL. After the expiration time the secret
+Your task is to implement a secret server and a React UI to manage the secrets. The secret server can be used to store and share secrets. But the secret can be read only before the expiration time. The secret may have TTL. After the expiration time the secret
 won’t be available anymore. You can find the detailed API documentation in the swagger.yaml file.
 We recommend to use [Swagger](https://editor.swagger.io/) or any other OpenAPI implementation to
 read the documentation.
