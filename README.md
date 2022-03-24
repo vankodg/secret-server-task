@@ -10,7 +10,7 @@ read the documentation.
 ## Task
 
 **Implementation**: You have to implement the whole Secret Server API in NodeJS and MongoDB with any framework of your choice. However it would be wise to store the data using encryption, now this is not part of the task. You can use plain text to store your secrets.
-Also create a React.js UI for it, where the user can add and list the secrets.
+Also create a React.js UI for it, where the user can add and retrieve the secrets by hash.
 
 **Response types**
 The API must be able to response with JSON, based on the [Accept header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept). Other response types (such as YAML) might be added later so prepare your code to be extandable.
