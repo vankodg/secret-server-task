@@ -23,13 +23,16 @@ export default function AddSecret() {
     newSecret.append("secret", form.secret);
     newSecret.append("expireAfter", form.expireAfter);
 
-    const secretResponse = await fetch("http://localhost:5000/v1/secret", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: new URLSearchParams(newSecret),
-    }).catch((error) => {
+    const secretResponse = await fetch(
+      "secret-server-42391.herokuapp.com/v1/secret",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams(newSecret),
+      }
+    ).catch((error) => {
       window.alert(error);
       return;
     });
